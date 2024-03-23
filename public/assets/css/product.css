@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(../img/barley-field-1684052_640.jpg);
+}
+
+.content img{
+    width: 90%;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.5);;
+    border: 10px solid #fff;
+    margin-left: 100px;
+    
+}
+
+.content{
+    padding: 20px;
+}
+
+/* product */
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    overflow-x: auto;
+    /* border: 20px solid #f5f2eb96; */
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+
+
+.container-product{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: auto;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 1px 3px rgba(151, 140, 140, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: transform 0.7s;
+    /* border: 2px solid black; */
+}
+
+.container-product:hover{
+    border: 1px solid rgb(183, 174, 174);
+    transform: translateY(-15px);
+}
+.container-image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+

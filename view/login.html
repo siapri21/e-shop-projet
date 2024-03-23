@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="/public/assets/css/login.css">
+  <link rel="stylesheet" href="/public/assets/css/style.css">
+  <script src="https://kit.fontawesome.com/52cd6924e7.js" crossorigin="anonymous"></script>
+
+   <!-- siapri -->
+   <script src="https://kit.fontawesome.com/ae331aba90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <!-- header -->
+  <header>
+    <figure  class="navigation">
+      <a href="../view/produit.html">Produit</a>
+      <img src="../public/assets/img/cereal-logo.png" alt="Logo de la Ferme">
+      <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+      <!-- <a href="view/login.html"><i class="fa-solid fa-right-to-bracket"></i></a> -->
+      <a href="view/panier.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </figure>
+  </header>
+
+  
+  <section class="form-container">
+     
+       <h1>Connexion </h1>
+        
+        <!-- <p class="title">Bienvenue Parmi nous ! </p> -->
+        <form class="form">
+          <input type="email" class="input" placeholder="Email" required>
+          <input type="password" class="input" placeholder="mot de passe" required>
+          <p class="page-link">
+            <span class="page-link-label">mot de passe?</span>
+          </p>
+          <button class="form-btn">Envoyer</button>
+        </form>
+        <div class="ins-btn">
+          <a href="../view/inscrire.html"  target="_blank" >Créer une compte</a>
+        </div>
+
+        <div class="social">
+    
+        <a href="#"><img src="../public/assets/img/instagram.png" alt="" width="55%">
+          <i class="icon ion-social-instagram"></i></a>
+          <a href="https://www.facebook.com/"><img src="../public/assets/img/facebook.png" alt="" width="55%">
+            <i class="icon ion-social-snapchat"></i></a>
+            <a href="https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop" target="_blank"><img src="../public/assets/img/google-1088004_640.png" alt="" width="60%">
+              <i class="icon ion-social-twitter"></i> </a>
+        </div>
+    </section>
+
+
+ <!-- <main class="container-formulaire">
+  <form  id="login-form">
+    <input type="email"  id="email" placeholder="Entrez votre mail" required >
+    <input type="password" id="password" placeholder="Entrez votre mot de passe" required>
+    <button type="submit"> Envoyer</button>
+    <button type="reset"> Réinitialiser</button>
+    <p class="page-link">
+      <span class="page-link-label">mot de passe?</span>
+    </p>
+  </form>
+ </main> -->
+
+
+
+ <script type="module">
+
+  /*-------------------------Dossier import--------------------------------*/ 
+
+import { AuthService } from  "../src/services/aut.services.js"
+import { submitCallback } from "../src/handlers/submitHandlers.js"
+
+
+  // ecouter sur tout le formulaire
+
+  // ce declenché quand la page html est compétement chargé et analyse sans attendre le chargement du feuille de 
+  // style , images, etc
+
+  window.addEventListener("DOMContentLoaded" , () =>{
+
+  })
+
+
+  /* ----------------------------variable------------------------*/ 
+
+  //declaration d'une variable pour stocker en elle l'element htlm de type form
+
+  const form = document.getElementById("login-form");
+  form.addEventListener('submit' , submitCallback);
+
+  
+
+ </script>
+
+
+<!-- footer -->
+
+<figure      class="footer-basic">
+  <footer>
+      <div class="social">
+        <a href="https://www.instagram.com/"  target="_blank"><img src="../public/assets/img/instagram.png" alt="" width="55%">
+        <i class="icon ion-social-instagram"></i></a>
+
+        <a href="https://www.facebook.com/" target="_blank"><img src="../public/assets/img/facebook.png" alt="" width="55%">
+          <i class="icon ion-social-snapchat"></i> </a>
+          
+          <a href="https://twitter.com/" target="_blank"><img src="../public/assets/img/twitter.png" alt="" width="55%">
+            <i class="icon ion-social-twitter"></i></a>
+
+            <a href="https://www.youtube.com/" target="_blank"><img src="../public/assets/img/youtube.png" alt="" width="55%" >
+              <i class="icon ion-social-facebook"></i>
+            </a></div>
+
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item"><a href="#">Services</a></li>
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Produits</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">Company Name © 2024</p>
+  </footer>
+
+
+
+
+
+
+  
+</body>
+</html>

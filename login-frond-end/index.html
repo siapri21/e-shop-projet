@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="login-front">
+        <input id="email" type="email" placeholder="Entrez votre email">
+        <input  id="password" type="password" name="mdp" placeholder="Entrez votre mdp">
+
+    </form>
+    
+    <script type="module">
+
+   import { form, emailInput, passwordInput } from "./constante/dom.js";
+
+//    ecouteur d'evenement
+
+//RECUPERE LA NOUVELLE VALUE SUR INPUT (caractere par caracter)
+
+//pour que l'individu fini d'ecrire pour voir le resultat il faut utilise
+//  addEventListener 
+console.log('emailInput',emailInput);
+emailInput.addEventListener('input', (e) => {
+    console.log(e.target.value);
+})
+
+// service 
+// on est dans le cas d'une fonction donc on ecrit pas de fonction 
+
+class AuthService{
+
+    static login(){
+
+          console.log('appel de ma methode login');
+    }
+}
+AuthService.login()
+    </script>
+    
+</body>
+</html>
