@@ -22,6 +22,23 @@ export class AuthService{
     } 
 
     } 
+ // tout s'est bien passé je veux persister mon utilisateur du côté du navigateur
 
+//       const storage = window.localStorage;
+//      const data = {
+//      email: user.email,
+//      firstname: user.firstname,
+//      lastname: user.lastname,
+//  };
+
+//     storage.setItem("user", JSON.stringify(data){
+
+//  });
+
+// static logout() {
+//  console.log("appel de la méthode logout");
+//  const storage = window.localStorage;
+//  storage.removeItem("user");
+// }
 
 }

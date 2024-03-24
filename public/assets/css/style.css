@@ -53,42 +53,49 @@ video{
   z-index: -1;
 }
 
-
-
-/* gallery */
-/* .gallery {
-    display: flex;
-    gap: 60px;
-    justify-content: center;
-    /* align-items: center; */
-    /* margin-top: 100px;
-    padding-inline-start: var(padding-inline-start);
-} */
-
-/* .gallery img{
-    gap: 10px;
-    width :30%;
-    height: 250px;
-    border-radius: 5px;
-    box-shadow: 10px 5px 5px rgb(164, 162, 162);
-} 
- */
+/* conteneur galerry  et texte */
 
  .gallery-container {
-  padding: 100px;
+  padding: 60px;
   overflow: hidden;
   width: 100%;
   position: relative;
 }
 
-.gallery-container .text h2{
+ .text h2{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: small;
   font-size: 1.2rem;
-  padding: 20px;
+  padding: 10px;
+  animation-duration: 20s;
+  animation-name: slidein;
+}
+
+.text:hover h2{
+  color: antiquewhite;
+  background: linear-gradient(135deg, orange 60%, cyan );
+}
+
+.text{
+  background: linear-gradient(#e19898, rgba(177, 115, 177, 0.933));
+  margin: auto;
+  width: 90%;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .gallery {
+  padding: 50px;
   gap: 20px;
   display: flex;
   width: 200%; /* Ajustez selon le nombre d'images et leur taille */
@@ -100,8 +107,6 @@ video{
   height: 300px;
   border-radius:5px ;
 }
-
-
 
 
 /* footer */

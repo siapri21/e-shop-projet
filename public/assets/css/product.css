@@ -7,21 +7,22 @@
 
 body{
     background-image: url(../img/barley-field-1684052_640.jpg);
-}
 
-.content img{
+
+/* .content img{
     width: 90%;
-    height: 250px;
+    height: 350px;
     background: rgba(0, 0, 0, 0.5);;
-    border: 10px solid #fff;
+    border-radius: 10px;
     margin-left: 100px;
-    
-}
+    margin-top: 200px;
+    box-shadow: 0 10px 30px rgba(27, 26, 26, 0.12), 0 10px 2px rgba(41, 37, 37, 0.24);
 
-.content{
+} */
+
+/* .content{
     padding: 20px;
-}
-
+} */
 /* product */
 
 .container{
