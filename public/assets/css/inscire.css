@@ -167,3 +167,11 @@ body {
   button.social-signin.google {
     background: rgba(255, 0, 0, 0.829);
   }
+
+  @media screen and (max-width:990px) {
+    #login-box{
+      width: 300px;
+      height: 82vh;
+    }
+    
+  }

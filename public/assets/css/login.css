@@ -2,7 +2,7 @@ body{
   background-image: url(../img/field-3186902_1280.jpg);
 }
 
-.container-video {
+/* .container-video {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -12,7 +12,7 @@ body{
   top: 0;
   bottom: 0;
   z-index: -1000;
-}
+} */
 
 .form-container {
     width: 450px;
@@ -139,6 +139,17 @@ body{
     margin-left: 50px;
     /* align-items: center; */
     /* justify-content: center; */
+  }
+
+
+  @media screen and (max-width:990px){
+    .form-container{
+      width: 400px;
+      height: 400px;
+      align-items: center;
+      margin-left: 10px;
+    }
+    
   }
   
   

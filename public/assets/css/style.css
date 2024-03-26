@@ -108,6 +108,17 @@ video{
   border-radius:5px ;
 }
 
+@media screen and (max-width:990px) {
+  .gallery{
+    flex-direction: column;
+    padding: 20px;
+  }
+  .gallery img{
+    width: 50%;
+    height: 200px;
+  }
+}
+
 
 /* footer */
 .footer-basic {
@@ -169,15 +180,11 @@ video{
     margin-bottom:0;
   }
 
-  @media screen and (max-width:770px){
+  @media screen and (max-width:990px){
     .navigation{
-      width:500px;
+      width:100%;
     }
-    .fond{
-      width: 500px;
-      font-size: 1rem;
-      font-style: italic;
-    }
+  
 
     .gallery{
       flex-direction: column;
@@ -185,6 +192,6 @@ video{
     }
 
     .footer-basic{
-      width: 500px;
+      width: 100%;
     }
   }
