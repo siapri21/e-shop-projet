@@ -48,75 +48,44 @@
 }
 
 video{
+  width: 100%;
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-/* conteneur galerry  et texte */
-
- .gallery-container {
-  padding: 60px;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
- .text h2{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: small;
-  font-size: 1.2rem;
+  /* position: fixed; */
   padding: 10px;
-  animation-duration: 20s;
-  animation-name: slidein;
 }
 
-.text:hover h2{
-  color: antiquewhite;
-  background: linear-gradient(135deg, orange 60%, cyan );
-}
-
-.text{
-  background: linear-gradient(#e19898, rgba(177, 115, 177, 0.933));
-  margin: auto;
-  width: 90%;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-.gallery {
-  padding: 50px;
-  gap: 20px;
+.family{
   display: flex;
-  width: 200%; /* Ajustez selon le nombre d'images et leur taille */
-  transition: transform 0.5s ease; /* Animation de transition */
+  justify-content: space-between;
+  width: 80%;
+  background: burlywood;
+  margin-left: 100px;
+  /* padding: 20px; */
+
 }
 
-.gallery img {
-  width: 20%;
-  height: 300px;
-  border-radius:5px ;
+.images img{
+  width: 500px;
+  height: 350px;
+  padding: 50px;
 }
 
-@media screen and (max-width:990px) {
-  .gallery{
-    flex-direction: column;
-    padding: 20px;
-  }
-  .gallery img{
-    width: 50%;
-    height: 200px;
-  }
+.paragraphes{
+  padding: 20px 30px ;
+  margin: auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+font-size: 1rem;
+transition: 5s;
+}
+
+.paragraphes h2{
+  text-align: center;
+  padding: 10px;
+  font-size: 2rem;
 }
 
 
@@ -182,16 +151,43 @@ video{
 
   @media screen and (max-width:990px){
     .navigation{
-      width:100%;
-    }
-  
-
-    .gallery{
-      flex-direction: column;
-      padding: 20px;
+      width:500px;
     }
 
+    video{
+      width: 500px;
+    }
+
+    .family{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width:500px;
+      height: 400px;
+    }
+
+    .images img{
+      width:200px;
+      height: 200px;
+      padding: 2px;
+    }
+
+    .paragraphes {
+      font-size: 9px;
+      padding: 50px 90px; 
+      margin: auto;
+      transition: none;
+      font-family: arial;
+    }
+
+    .paragraphes h2{
+      font-size: 1rem;
+    }
+
+
+    
     .footer-basic{
       width: 100%;
     }
   }
+ 
