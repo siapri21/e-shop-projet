@@ -87,6 +87,16 @@ transition: 5s;
   padding: 10px;
   font-size: 2rem;
 }
+.Titre >h1{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+
+/* regions c */
 
 
 /* footer */
